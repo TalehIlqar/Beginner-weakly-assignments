@@ -1,0 +1,190 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-info">
+    <a class="navbar-brand text-uppercase" href="/book"
+    ><div class="container">Kitab Mağazası</div></a
+    >
+    <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+    >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="container">
+        <ul
+        class="navbar-nav ml-auto my-2 my-lg-0 navbar-nav-scroll"
+        style="max-height: 100px"
+        >
+      
+      {% if a == 'True' %}
+        <li class="nav-item dropdown">
+          <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarScrollingDropdown"
+          role="button"
+              data-toggle="dropdown"
+              aria-expanded="false"
+              >
+              <span class="bg-danger text-light rounded" id="counter"></span>
+              <i class="fas fa-shopping-basket"></i>
+            </a>
+            <ul
+            id="books"
+            class="dropdown-menu"
+            aria-labelledby="navbarScrollingDropdown"
+            >
+            <li id="book">
+              <a class="dropdown-item" href="#">
+                  <table>
+                    <tr>
+                      <td><i class="fas fa-times-circle"></i> {{results[book_ind-1]['title']}}</td>
+                      <td class="price">{{results[book_ind-1]['price']}} AZN</td>
+                    </tr>
+                  </table>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <table>
+                    <tr>
+                      <td><i class="fas fa-times-circle"></i> {{results[book_ind-2]['title']}}</td>
+                      <td style="margin-left: auto;" class="price">{{results[book_ind-2]['price']}} AZN</td>
+                    </tr>
+                  </table>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                ><table>
+                  <tr>
+                    <td><i class="fas fa-times-circle"></i> {{results[book_ind-3]['title']}}</td>
+                    <td class="price">{{results[book_ind-3]['price']}} AZN</td>
+                    </tr>
+                  </table></a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                  ><table>
+                    <tr>
+                      <td><i class="fas fa-times-circle"></i> {{results[book_ind-4]['title']}}</td>
+                      <td class="price">{{results[book_ind-4]['price']}} AZN</td>
+                      </tr>
+                    </table></a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                    ><table>
+                      <tr>
+                        <td><i class="fas fa-times-circle"></i> {{results[book_ind-5]['title']}}</td>
+                        <td class="price">{{results[book_ind-5]['price']}} AZN</td>
+                        </tr>
+                      </table></a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                      ><table>
+                        <tr>
+                          <td><i class="fas fa-times-circle"></i> {{results[book_ind-6]['title']}}</td>
+                          <td class="price">{{results[book_ind-6]['price']}} AZN</td>
+                          </tr>
+                        </table></a
+                        >
+                      </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                  >Cəmi <span id="priceSum"></span> AZN</a
+                  >
+                </li>
+              </ul>
+            </li>
+            {% endif %}
+          {% if a != 'True' %}
+          <li class="nav-item active">
+            {% endif %}
+            <a class="nav-link" href="/book"
+            >Ana Səhifə</a
+            >
+        </li>
+​
+          <li class="nav-item">
+            <a class="nav-link" href="#">Haqqımızda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Kateqoriyalar</a>
+          </li>
+          {% if a == 'True' %}
+          <li class="nav-item active">
+            {% endif %}
+            <a class="nav-link" href="/book/1"
+            >Ayın kitabı</a
+            >
+          </li>
+          {% if current_user.is_authenticated %}
+          <li class="nav-item dropdown">
+            <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarScrollingDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-expanded="false"
+            >
+            {{current_user.first_name}} {{current_user.last_name}}
+          </a>
+          <ul
+              class="dropdown-menu"
+              aria-labelledby="navbarScrollingDropdown"
+              >
+              <li><a id="logout" class="dropdown-item" href="/logout"><i class="fas fa-sign-in-alt"> Çıxış </i></a></li>
+              
+            </ul>
+          </li>
+          {% else %}
+          <li class="nav-item dropdown">
+            <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarScrollingDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-expanded="false"
+            >
+            İstifadəçi
+          </a>
+          <ul
+              class="dropdown-menu"
+              aria-labelledby="navbarScrollingDropdown"
+              >
+              <li><a class="dropdown-item" href="http://127.0.0.1:5000/login"><i class="fas fa-sign-in-alt"> Daxil ol</i></a></li>
+              <li><a class="dropdown-item" href="http://127.0.0.1:5000/register"><i class="fas fa-user-plus"> Qeydiyyatdan keç</i></a></li>
+              
+            </ul>
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+  </nav>
+​
+​
+  
+    {% block layout %}
+    
+    {% endblock %}
+​
+​
+    <div style="border-radius: 0" class="card border-0 text-center bg-info">
+        <div class="card-body my-1">
+          <h5 class="card-text text-light">Copyright © E-mağaza layihəsi</h5>
+        </div>
+    </div>
+  

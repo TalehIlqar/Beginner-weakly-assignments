@@ -1,0 +1,10 @@
+create table  Book_info(
+id int(11) unsigned auto_increment primary key not null,
+title varchar(255) not null,
+author varchar(255) not null, 
+published_at date,
+exist boolean default true,
+genre varchar(255),
+price DECIMAL(10,2) default 10.00
+);
+

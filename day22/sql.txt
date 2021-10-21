@@ -1,0 +1,36 @@
+create table book_info (
+    id int(11) auto_increment primary key not null,
+    title varchar(255) not null,
+    author varchar(255) not null,
+    price decimal(10,2) not null
+);
+
+
+
+insert into book_info (title, author, price)
+values ('Sefiller', 'Wiqtor Huqo', 30),
+       ('Etiraf', 'Lev Tolstoy', 20),
+       ('Olu evden qeydler', 'Fyodor Dostoyevski', 25),
+       ('Cherpeleng uchuran', 'Huseyn Xalid', 20),
+       ('Messi', 'Sattar Nariman', 31),
+       ('Beyaz Gece', 'Fyodor Dostoyevski', 9)
+
+
+select title, price from book_table 
+select title, price from book_table where price > 10.10
+select * from book_table where id = 1
+SELECT * FROM book_table WHERE id IN (1,2,3)
+SELECT * FROM book_table WHERE price BETWEEN 5.00 and 15.00
+select * from book_table where price > 15.00
+select title, price from book_table where price > 10.00 and id  = 2
+SELECT * FROM book_table WHERE author LIKE 'Da%'
+SELECT * FROM book_table WHERE author LIKE '_av%'
+SELECT * FROM book_table ORDER BY price asc
+SELECT * FROM book_table ORDER BY id desc;
+UPDATE book_table set author = false where id=2
+DELETE FROM book_table WHERE id = 3
+delete from book_table
+DROP TABLE book_table
+DROP database DB
+
+

@@ -1,0 +1,367 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+
+    <title>Product page</title>
+</head>
+
+<body>
+
+
+    <div class="row bg-info navbar-dark">
+        <div class="col">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light pl-0 pr-0  row  ">
+                    <a class="navbar-brand  col-3" href="#">Kitab magazasi</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse col-9 d-flex justify-content-end" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="araba">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink"
+                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span id="badge" class="badge badge-pill badge-danger"></span>
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">
+                                        <div id="xbirincidiv" class="d-flex" style="justify-content: space-between;">
+
+                                            <span class="mr-4">
+                                                <i id="xbirinci" onclick="xbirinci()" class="fas fa-times" style="color: red;"></i>
+                                                1984
+                                            </span>
+
+                                            <span class="ml-5"><span class="price">16</span> AZN</span>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <div id="xikincidiv" class="d-flex" style="justify-content: space-between;">
+
+                                            <span class="mr-4">
+                                                <i id="xikinci" onclick="xikinci()" class="fas fa-times" style="color: red;"></i>
+                                                Sefiller
+                                            </span>
+
+                                            <span class="ml-5"><span class="price">24</span> AZN</span>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <div id="xuchuncudiv" class="d-flex" style="justify-content: space-between;">
+                                            <span class="mr-4">
+                                                <i id="xuchuncu" onclick="xuchuncu()" class="fas " style="color: red;"></i>
+                                                <span id="kitabadd"></span>
+                                            </span>
+                                            <span id="kitabprice" class="ml-5 price"></span><span id="AZN"></span>
+                                        </div>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">
+                                        <div class="d-flex " style="justify-content: space-between; ">
+                                            <span class="mr-4">Cemi</span>
+                                            <span id="toplamqiymet" class="ml-5" ><span id="sum"></span>AZN</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+
+                            </li>
+                            <li class="nav-item active ">
+                                <a class="nav-link "
+                                    href="file:///home/taleh/New%20Tech%20Academy/Beginner/weekly/bse-homeworks-TalehIlqar/day11/index.html">Ana
+                                    sehife <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  opacity-0.5" href="#">Haqqimizda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Kateqoriyalar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Ayin kitabi <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Istifadechi
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <div class="container">
+        <div class="row mt-5">
+
+
+            <div class="col-3 ">
+                <img src="../assets/images/Inkognito.png" alt="" class="rounded w-100">
+            </div>
+
+            <div class="col-9">
+                <div id="yazilar " class="text-right ">
+                    <h3 class="kitabadi font-weight-bold">David Elegman - (beyinin gizli heyati)</h3>
+                    <span class="ilkqiymet text-success h4">12.00azn</span>
+                    <span class="del text-danger"><del>16.00azn</del></span>
+                </div>
+                <div class="tablo text-right mt-5">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab nihil eos nemo esse
+                        remdolor sit, amet consectetur adipisicing elit. Ab nihil eos nemo esse
+                        epreheeprehenderit tenetur,dolor sit, amet consectetur adipisicing elit. Ab nihil eos nemo esse
+                        rem est sit veritatis, odit, dolore mollitia bolt yazi reprehenderit tenetur,dolor sit, azi
+                        reprehenderit tenetur,dolor sit, amet consectetur adipisicing elit. Ab nihil eos nemo esse
+                        rem cing elit. Ab nihil eos nemo esse
+                        rem est sit veritatis, odit, dolore mollitia bolt yazi reprehenderit tenetur,dolor sit, amet
+                        consectetur adipisicing elit. Ab nihil eos nemo esse
+                        rem est sit veritatis, odit, dolore mollitia bolt yazi reprehenderit tenetur, est sit
+                        veritatis, odit, dolore mollitia bolt yazi reprehenderit tenetur, eveniet fuga earum.
+                    </p>
+                    <i class="fas fa-thumbs-up text-primary mr-3" id="like" onclick="like()"
+                        style="font-size: 30px; "></i>
+                    <i class="fas fa-heart text-secondary mr-3" id="heart" onclick="heart()"
+                        style="font-size: 30px;"></i>
+                    <input type="button" id="button" value="Sebete elave et" class="addit bg-info text-light btn"
+                        onclick="button()">
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="container">
+
+
+
+        <div class="row mt-5">
+            <div class="col">
+                <div id="alertdiv" class="alert alert-warning text-center" role="alert">
+                    Bu kitabdan cemi <span id="alert">2</span> eded qalib
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row mt-5">
+            <div class="col">
+                <h3 class="text-center">
+                    Xususiyyetler
+                </h3>
+            </div>
+        </div>
+
+
+
+
+        <div class="row ">
+            <div class="col">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Dil</td>
+                            <td>Azerbaycan</td>
+
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Janr</td>
+                            <td>psixologiya</td>
+
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Muellif</td>
+                            <td>David E</td>
+
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Neshriyyat</td>
+                            <td>Qanun Neshriyyati</td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+
+        <div class="row mt-5">
+            <div class="col">
+                <h3 class="text-center">
+                    Sherh yaz
+                </h3>
+            </div>
+        </div>
+
+
+
+        <div class="row ">
+            <div class="col">
+                <label for="">Tam adiniz:</label>
+                <div class="input-group mb-5">
+                    <input type="text" placeholder="Ad soyad" class="form-control" id="basic-url"
+                        aria-describedby="basic-addon3">
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="row ">
+            <div class="col">
+                <label for="basic-url">Hansi dilde oxumusuz</label>
+                <div class="input-group mb-5">
+                    <select class="custom-select" id="inputGroupSelect02">
+                        <option selected>Olke</option>
+                        <option value="1">Azerbaycan</option>
+                        <option value="2">Tayland</option>
+                        <option value="3">Calunbiya</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="row ">
+            <div class="col">
+                <div class="form-group mb-5">
+                    <label for="formControlRange">Qiymetlendirme</label>
+                    <input type="range" class="form-control-range" id="formControlRange">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row ">
+            <div class="col">
+                <label for="basic-url ">Sherhiniz</label>
+                <div class="input-group">
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row ">
+            <div class="col">
+                <div class="custom-control custom-switch mt-5">
+                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                    <label class="custom-control-label" for="customSwitch1">Bu kitabi oxumusunuz</label>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="row ">
+            <div class="col">
+                <button type="button" class="btn btn-primary mt-5">Submit</button>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <div>
+        <button type="button" class="btn btn-lg bg-info w-100 pb-0 text-light mt-5">
+            <p>Copywriter<span> &#169;</span> E-magaza Layhesi</p>
+        </button>
+    </div>
+
+
+   
+    <div id="modal1" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Bildiriş</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-right">Məhsul səbətə əlavə edildi</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Bağla</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Bildiriş</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-right">Məhsul səbətdən çıxarıldı</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Bağla</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

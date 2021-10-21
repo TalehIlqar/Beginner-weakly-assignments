@@ -1,0 +1,137 @@
+.sehife_adi{
+    font-family: 'Lobster';
+}
+.header{
+    background-color: #109e97;
+    width: 100%;
+    height: 100px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.orta_container{
+    margin: 40px 0 40px 0;
+    border: 1px dashed #000;
+    /* padding: 0 !important; */
+}
+.kitabin_adi_ve_qiymeti{
+    border: 1px dashed #000;
+    /* height: 80px; */
+}
+.qiymetler{
+    font-family: Verdana;
+}
+
+.kohne_qiymet{
+    color: red;
+    text-decoration-line: line-through;
+}
+
+.teze_qiymet{
+    color: green;
+    font-size: 24px;
+    display: inline-block;
+    font-family: Verdana;
+    margin: 0;
+}
+
+h2,h3,h4,h5{
+    text-transform:capitalize;
+}
+.orta_containerin_col_8{
+    /* position: absolute  ;
+    right: 0; */
+}
+.loremback_ground{
+    position: absolute;
+    bottom: 0;
+    border: 1px dashed #000;
+
+}
+.qisa_mezmun{
+    font-size: 20px;
+    color: #000;
+    text-transform: uppercase;
+}
+.lorem{
+    color: #000;
+}
+.button_sebet{
+    background-color: #109e97;
+    color: #fff;
+    width: 130px;
+    height:45px;
+}
+
+.kitablar_ve_form{
+    text-align: center;
+    background-image: url(../assets/images/Inkognito.png), url(../assets/images/Inkognito.png);
+    background-repeat: no-repeat;
+    background-position: left, right;
+    background-size: contain;
+    margin: 20px 0 20px 0;
+    
+    
+}
+
+
+.vertical{
+    border-top: 2px solid #000;
+    width: 100%;
+    opacity: 0.5;
+}
+
+table tr td{
+    border-bottom: 1px solid #000;
+}
+ul{
+    color: blue;
+}
+
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: #109e97;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+.footer_p{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.icon{
+    position: fixed;
+    top: 120px;
+    right: 100px;
+    text-align: center;
+}
+
+.fa-facebook-f,.fa-youtube, .fa-instagram, .fa-linkedin, .fa-google{
+    font-size: 25px;
+    background-color: #109e97;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding-top: 12px;  /*bu duzgun deyil bunu paddingsiz nece etmek olar d-flex falan sorush*/
+
+}
+.fa-angle-double-up{
+    margin-top: 20px;
+    background-color: #000;
+    color: #fff;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding-top: 12px;  /*bu duzgun deyil bunu paddingsiz nece etmek olar d-flex falan sorush*/
+
+}
+
+

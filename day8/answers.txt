@@ -1,0 +1,2 @@
+1. Grid sistemi vasitesile tamamile sehifeleri duzgun bolmek olar.
+2. Bu sistem vasitesile simmetrik sehiheler yigmaq olar

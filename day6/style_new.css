@@ -1,0 +1,313 @@
+.sehife_adi{
+    font-family: 'Lobster';
+}
+.header{
+    width: 100%;
+    height: 100px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav_li{
+    display: flex;
+    width: 100vw;
+    background-color: #109e97;
+    color: #fff;
+    text-align: center;
+    border-left: 1px solid #fff; 
+    height: 40px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.container_nav_ich{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.ul_container_row{
+    text-transform: uppercase; height: 100%; font-family: 'Roboto', sans-serif;
+    display: flex;
+
+}
+
+.orta_container{
+    margin: 40px auto;
+}
+.kitabin_adi_ve_qiymeti{
+    text-align: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+}
+.qiymetler{
+    font-family: Verdana;
+}
+
+.kohne_qiymet{
+    color: red;
+    text-decoration-line: line-through;
+}
+
+.teze_qiymet{
+    color: green;
+    font-size: 24px;
+    display: inline-block;
+    font-family: Verdana;
+    margin: 0;
+}
+
+h2,h3,h4,h5{
+    text-transform:capitalize;
+}
+
+.loremback_ground{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    width: 80%;
+
+}
+.qisa_mezmun{
+    font-size: 20px;
+    color: #000;
+    text-transform: uppercase;
+}
+.lorem{
+    color: #000;    
+}
+.button_sebet{
+    background-color: #109e97;
+    color: #fff;
+    width: 130px;
+    height:45px;
+}
+
+
+.xususiyyetler{
+    text-transform: uppercase;
+    margin: 20px 0 20px 0;
+    text-align: center
+}
+
+.vertical{
+    border-top: 2px solid #000;
+    width: 100%;
+    opacity: 0.5;
+}
+
+table tr td{
+    border-bottom: 1px solid #000;
+}
+ul{
+    color: blue;
+}
+
+.shekil_sol, .shekil_sag{
+    display: block;
+}
+
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: #109e97;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    border-top: 1px solid #000;
+    margin-top: 20px;
+}
+.footer_p{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.icon{
+    position: fixed;
+    top: 200px;
+    right: 100px;
+    text-align: center;
+    display: block;
+
+}
+
+.mehsul{
+    background-color: #066943;
+    color: #fff;
+}
+.form_containerr{
+    opacity: 0.3;
+}
+.form_containerr:hover{
+    opacity: 1;
+}
+.name_input:focus, .date_input:focus{
+    background-color: yellow;
+}
+.fa-facebook-f,.fa-youtube, .fa-instagram, .fa-linkedin, .fa-google{
+    font-size: 25px;
+    background-color: #109e97;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 12px; 
+    text-align: center;
+
+}
+.fa-angle-double-up{
+    margin-top: 20px;
+    background-color: rgb(116, 107, 107);
+    color: #fff;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding-top: 12px;  
+    text-align: center;
+
+}
+
+
+.verticall{
+    margin: 10px auto;
+    display: none;
+    border-top: 2px solid #000;
+    width: 100%;
+    opacity: 0.5;
+}
+
+
+@media (max-width: 600px){
+    .container_nav_ich{
+        display: block;
+    }
+    
+    
+    .fa-facebook-f,.fa-youtube, .fa-instagram, .fa-linkedin, .fa-google{
+        padding-top: 12px;
+    }
+
+    .fa-angle-double-up{
+        /* margin-left: 20px; */
+        margin-top: 0px;
+    
+    }
+    .nav_li{
+        border-top: 1px solid #fff; 
+        border-left: none;
+        border-right: none;
+    }
+    .nav_li_anasehife{
+        border-top: 1px solid #000 !important;
+    }
+    .nav_li_elaqe{
+        border-bottom: 1px solid #000;
+    }
+    .kitabin_adi_ve_qiymeti{
+        text-align: center;
+        position: static;
+        width: 100%;
+        margin-top: 40px;
+    }
+    .loremback_ground{
+        position: static;
+        text-align: center;
+        width: 100%;
+        
+    }
+    .shekil_sol, .shekil_sag{
+        display: none;
+    }
+    .form_containerr{
+        opacity: 1;
+    }
+    .verticall{
+        display: block;
+        margin: 40px auto;
+    }
+    
+    .icon{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        top: 0;
+        left: 0;
+    }
+} 
+
+@media (max-width: 768px){
+    .kitabin_adi_ve_qiymeti{
+        text-align: center;
+        position: static;
+        width: 100%;
+        margin-top: 40px;
+    }
+    .loremback_ground{
+        position: static;
+        text-align: center;
+        width: 100%;
+        
+    }
+    .form_containerr{
+        opacity: 1;
+    }
+    .verticall{
+        display: block;
+    }
+    .shekil_sol, .shekil_sag{
+        display: none;
+    }
+    .container_nav_ich{
+        width: 100%;
+    }   
+    
+}
+
+@media (max-width: 992px){
+    
+    .kitabin_adi_ve_qiymeti{
+        text-align: center;
+        position: static;
+        width: 100%;
+        margin-top: 40px;
+    }
+    .loremback_ground{
+        position: static;
+        text-align: center;
+        width: 100%;
+        
+    }
+    .form_containerr{
+        opacity: 1;
+    }
+    .verticall{
+        display: block;
+    }
+    .shekil_sol, .shekil_sag{
+        display: none;
+    }
+    .container_nav_ich{
+        width: 100%;
+    }
+    
+    
+}
+
+@media (max-width: 1024px){
+    .shekil_sol, .shekil_sag{
+        display: none;
+    }
+    .form_containerr{
+        opacity: 1;
+    }
+}
